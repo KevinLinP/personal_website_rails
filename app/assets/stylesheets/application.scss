@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require 'cmun-bright'
+ */
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-weight: 300;
+}
+
+.circular-image {
+  border-radius: 50%;
+}
+
+.white-border {
+  border: 3px solid white
+}
+
+.resume {
+  font-family: "Computer Modern Bright", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  header {
+    margin-bottom: 3rem;
+  }
+
+  section {
+    margin-bottom: 2.25rem;
+
+    &.minor-section {
+      margin-bottom: 1.65rem;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+    margin-bottom: .7rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 1.3rem;
+  }
+
+  a {
+    color: #000;
+  }
+
+  ul.loose-list li {
+    margin-bottom: .6rem;
+  }
+}
+
+.github-fork-ribbon {
+  opacity: 0.3;
+  
+  &:before {
+    background-color: #CCC !important;
+  }
+}
+
+.github-fork-ribbon:hover {
+  opacity: 1;
+
+  &:before {
+    background-color: #FF7F00 !important;
+  }
+}
+
+@media print {
+  html {
+    font-size: 12.5px;
+  }
+
+  .container {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
