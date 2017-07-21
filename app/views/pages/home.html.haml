@@ -1,36 +1,36 @@
-.parallax-window(data-parallax="scroll" style="min-height: 400px" data-image-src="http://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg" data-natural-width=3246 data-natural-height=1342 data-bleed=120 data-speed='0.63')
-
-.row
-  .col-12.text-center
-    %img(src='http://ddw2ppmkywo9u.cloudfront.net/profile_picture.jpg' class='circular-image white-border' height='150px' width='150px')
-
-.container
-  %h1.text-center Kevin Lin
-
-  %ul.nav.justify-content-center
-    %li.nav-item
-      = link_to 'About Me', 'javascript:void(0);', class: 'nav-link disabled'
-    %li.nav-item
-      = link_to 'Professional Resume', page_path('resume'), class: 'nav-link'
+= cache do
+  .parallax-window(data-parallax="scroll" style="min-height: 400px" data-image-src="http://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg" data-natural-width=3246 data-natural-height=1342 data-bleed=120 data-speed='0.63')
 
   .row
-    %article.lead.col-lg-8.offset-lg-2.col-xs-12(style='margin-top: 3rem; margin-bottom: 6rem')
-      %p Hi o/ I'm Kevin. I collect experiences.
+    .col-12.text-center
+      %img(src='http://ddw2ppmkywo9u.cloudfront.net/profile_picture.jpg' class='circular-image white-border' height='150px' width='150px')
 
-      %p
-        As such, I have many interests and hobbies. And I'm always looking to do something new and go further. I'd like to offer my help in any of my below topics; just email me at #{mail_to 'kevin.lin.p@gmail.com', 'kevin.lin.p@gmail.com'}.
+  .container
+    %h1.text-center Kevin Lin
 
-      %p 
-        %ul
-          %li Software development
-          %li Cooking
-          %li Interactive art installations
-          %li PC building
-          %li Residential LED lighting
-          %li Stereo systems
-          %li Subject-matter expert introductions
-          %li General engineering
+    %ul.nav.justify-content-center
+      %li.nav-item
+        = link_to 'About Me', 'javascript:void(0);', class: 'nav-link disabled'
+      %li.nav-item
+        = link_to 'Professional Resume', page_path('resume'), class: 'nav-link'
 
-  .text-center(style="opacity: 0.3; margin-bottom: 3rem")
-    = image_tag('Flower_of_life-2level.svg', width: 250, height: 250, title: 'Flower of Life rendered by Tomruen', alt: 'Flower of Life')
+    .row
+      %article.lead.col-lg-8.offset-lg-2.col-xs-12(style='margin-top: 3rem; margin-bottom: 6rem')
+        %p Hi o/ I'm Kevin. I collect experiences.
 
+        %p
+          As such, I have many interests and hobbies. And I'm always looking to do something new and go further. I'd like to offer my help in any of my below topics; just email me at #{mail_to 'kevin.lin.p@gmail.com', 'kevin.lin.p@gmail.com'}.
+
+        %p 
+          %ul
+            %li Software development
+            %li Cooking
+            %li Interactive art installations
+            %li PC building
+            %li Residential LED lighting
+            %li Stereo systems
+            %li Subject-matter expert introductions
+            %li General engineering
+
+    .text-center(style="opacity: 0.3; margin-bottom: 3rem")
+      = image_tag('Flower_of_life-2level.svg', width: 250, height: 250, title: 'Flower of Life rendered by Tomruen', alt: 'Flower of Life')

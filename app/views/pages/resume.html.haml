@@ -1,34 +1,35 @@
-.resume
-  .container
-    %header.text-center
-      %h1 Kevin Lin
-      %a(href='mailto:kevin.lin.p@gmail.com') kevin.lin.p@gmail.com
+= cache do
+  .resume
+    .container
+      %header.text-center
+        %h1 Kevin Lin
+        %a(href='mailto:kevin.lin.p@gmail.com') kevin.lin.p@gmail.com
 
-    %section
-      %h2 Summary 
-      %p 4-year Ruby on Rails full-stack software developer currently seeking new opportunities.
+      %section
+        %h2 Summary 
+        %p 4-year Ruby on Rails full-stack software developer currently seeking new opportunities.
 
-    %section
-      %h2 Skills
+      %section
+        %h2 Skills
 
-      %ul.list-unstyled.loose-list
-        %li Languages: Ruby, HTML, Haml, CSS, Sass, JavaScript (ES6)
-        %li Frameworks: Ruby on Rails, RSpec, MiniTest, Capybara, Capistrano, jQuery, Bootstrap
-        %li Tools: Linux, PostgreSQL, Sidekiq, Redis, Memcache, Elasticsearch, Heroku, New Relic, CircleCI, Rollbar, Amazon EC2, Amazon Cloudfront, Twilio, Google Analytics, Optimizely
-        %li Methodologies: Test-driven development, Agile
+        %ul.list-unstyled.loose-list
+          %li Languages: Ruby, HTML, Haml, CSS, Sass, JavaScript (ES6)
+          %li Frameworks: Ruby on Rails, RSpec, MiniTest, Capybara, Capistrano, jQuery, Bootstrap
+          %li Tools: Linux, PostgreSQL, Sidekiq, Redis, Memcache, Elasticsearch, Heroku, New Relic, CircleCI, Rollbar, Amazon EC2, Amazon Cloudfront, Twilio, Google Analytics, Optimizely
+          %li Methodologies: Test-driven development, Agile
 
-    %section
-      = render 'pages/resume/experience'
+      %section
+        = render 'pages/resume/experience'
 
-    %section
-      = render 'pages/resume/education'
+      %section
+        = render 'pages/resume/education'
 
-    .visible-print-block
-      %footer
-        .row
-          .col-md-12
-            %small.text-muted Last updated July 14, 2016, printed from kevinlinp.org/resume
+      .visible-print-block
+        %footer
+          .row
+            .col-md-12
+              %small.text-muted Last updated July 14, 2016, printed from kevinlinp.org/resume
 
-.hidden-print
-  %a(class="github-fork-ribbon right-bottom fixed" href="https://github.com/kevinlinp/personal_website_rails" data-ribbon="View me on GitHub" title="View me on GitHub" target="_blank")
-    View me on GitHub
+  .hidden-print
+    %a(class="github-fork-ribbon right-bottom fixed" href="https://github.com/kevinlinp/personal_website_rails" data-ribbon="View me on GitHub" title="View me on GitHub" target="_blank")
+      View me on GitHub
