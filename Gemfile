@@ -18,6 +18,7 @@ gem 'sass-rails'
 gem 'hamlit-rails'
 
 # asset libraries
+gem 'jquery-rails'
 gem 'jquery-turbolinks'
 
 group :development, :test do
