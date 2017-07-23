@@ -11,6 +11,17 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery.turbolinks
 //= require turbolinks
 //= require_tree .
 //= require parallax.min
+
+$(document).ready(function() {
+  $('.parallax-window').parallax({
+    imageSrc: 'http://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg',
+    naturalWidth: 3246,
+    naturalHeight: 1342,
+    bleed: 120,
+    speed: 0.63
+  });
+});
