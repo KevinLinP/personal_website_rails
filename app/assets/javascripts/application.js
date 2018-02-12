@@ -19,7 +19,7 @@
 
 $(document).ready(function() {
   $('.parallax-window').parallax({
-    imageSrc: 'http://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg',
+    imageSrc: 'https://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg',
     naturalWidth: 3246,
     naturalHeight: 1342,
     bleed: 120,
