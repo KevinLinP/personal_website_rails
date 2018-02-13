@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
-ruby '2.4.1'
+ruby '2.5.0'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.1.4'
+gem 'rails'
 gem 'pg', '~> 0.18'
-gem 'puma', '~> 3.7'
+gem 'puma'
 
 gem 'high_voltage' # static pages
 
@@ -20,7 +20,10 @@ gem 'hamlit-rails'
 
 # asset libraries
 gem 'jquery-rails'
-gem 'jquery-turbolinks'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-onmount'
+end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

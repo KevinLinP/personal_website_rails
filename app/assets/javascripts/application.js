@@ -11,18 +11,21 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require jquery.turbolinks
+//= require onmount
 //= require turbolinks
-//= require_tree .
 //= require parallax.min
+//= require_tree .
 
-$(document).ready(function() {
-  $('.parallax-window').parallax({
-    imageSrc: 'https://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg',
-    naturalWidth: 3246,
-    naturalHeight: 1342,
+$(document).on('ready show.bs closed.bs load page:change turbolinks:load', function () {
+  $.onmount()
+})
+
+$.onmount('.parallax-window', function () {
+  $('.parallax-mirror').remove();
+
+  $(this).parallax({
+    src: 'https://ddw2ppmkywo9u.cloudfront.net/sunset_cropped.jpg',
     bleed: 120,
     speed: 0.63
   });
-});
+})
